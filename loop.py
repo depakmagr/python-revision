@@ -54,8 +54,9 @@ for x in "hey":
 d = {
     "name": "ASD"
     "age": 23
-    "address": "MNm"
+    "address": "nakkhu"
 }
+
 print(list(d.keys()))
 print(d.values())
 
