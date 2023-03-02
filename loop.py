@@ -1,3 +1,5 @@
+## for Loop
+
 for i in range(10):  # It range from 0 to 9
     print(i)
 
@@ -39,7 +41,67 @@ list = [1,2,3,4,5,6]
 for i in [list , 'now']:
     print(i)
 
-
-
 for x in "hey":
     print(x)
+
+
+
+
+
+
+## Loop in dictionary
+
+d = {
+    "name": "ASD"
+    "age": 23
+    "address": "MNm"
+}
+print(list(d.keys()))
+print(d.values())
+
+## Looping in the dictionary keys.
+for key in d.keys():
+    print(key)
+
+
+
+# # #Looping in the dictionary values
+for values in d.values():
+     print(values)
+
+for i in d:  # This is same as d.keys() but only in the loop
+     print(i)
+
+
+print(d.items())
+a, b = 1, 2  # tuple unpacking
+
+for key, value in d.items():
+    print(key, values)
+
+
+
+a = [1, 2, 3, 4]
+
+for i in a:
+    print(i)
+
+print(list(enumerate(a)))  #1, 2, 3, 4
+
+
+for index, value in enumerate(a, start=1):       # Its takes value as given
+    print(index, value)
+
+
+# While Loop
+
+counter = 0
+while counter < 5 :
+    counter += 1
+    print(counter)
+
+
+
+
+
+
