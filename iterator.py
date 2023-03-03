@@ -1,11 +1,11 @@
-# names = ['Gabs', 'Deeps']
-# name = iter(names)
-#
-# print(next(name))
-#
-# print(next(name))
-#
-# print(next(name))
+names = ['Gabs', 'Deeps']
+name = iter(names)
+
+print(next(name))
+
+print(next(name))
+
+print(next(name))
 
 
 language = 'Deeps'
@@ -25,7 +25,6 @@ print(next(name))
 # Write a program by using while loop with iteration
 
 names = ['Gabs', 'Deeps']
-w
 name_iter = iter(names)
 
 while True:
