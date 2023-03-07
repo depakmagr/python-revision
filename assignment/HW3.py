@@ -14,6 +14,7 @@ for key in d1:
     if key in d2:
         combined_dict[key] += d2[key]
 
+
 # Loop through each key in d2 that's not already in combined_dict and add its value
 for key in d2:
     if key not in combined_dict:
@@ -21,3 +22,23 @@ for key in d2:
 
 # Print the resulting combined dictionary
 print(combined_dict)
+
+
+
+
+d1 = {'a':100,'b':200,'c':300}
+d2 = {'a':300,'b':200,'d':400}
+di = dict()
+
+def new_d(a, b):
+    for i in a:
+        di[i] = a[i]
+        if i in b:
+            di[i] += b[i]
+
+    for i in b:
+        if i not in di:
+            di[i] = b[i]
+    print(di)
+
+new_d(d1, d2)

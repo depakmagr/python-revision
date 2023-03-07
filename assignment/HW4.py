@@ -25,7 +25,17 @@ print(is_anagram("restful", "fluster"))  # True
 print(is_anagram("hello", "world"))  # False
 
 
-git add .
-git commit -m "assignments"
-git branch -M main
-git push -u origin main
+
+
+
+def anagram(a, b):
+    c = a.lower() + b.lower()
+    c = c.replace(" ", "")
+    for i in c:
+        d = c.count(i)
+        if d % 2 == 0:
+            return True
+
+        return False
+
+print(anagram("silent", "listen"))

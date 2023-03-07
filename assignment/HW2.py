@@ -14,3 +14,16 @@ for char in input_str:
         letter_count[char] = 1
 
 print(letter_count)
+
+
+a = "broadway"
+dict = dict()
+def string_dic(x):
+    for i in x:
+        dict[i] = x.count(i)
+    print(dict)
+
+
+string_dic(a)
+
+
