@@ -31,11 +31,11 @@
 #
 # # add = decorator_me(add)
 # print(add(3, 5))
-import time
-
-
-####################
-
+# import time
+#
+#
+# ####################
+#
 # def decorator_me(function):
 #
 #     def inner_func(*args, **kwargs):
@@ -59,27 +59,48 @@ import time
 # end = time.time()
 #
 # print(f"Total function execution time is {end-start}")
+#
+#
+# #################################
 
+# def execute_time(func):
+#     def inner_function(*args, **kwargs):
+#         start = time.time()
+#         r = func(*args, **kwargs)
+#         end = time.time()
+#         print(f"The function execution time is {end-start}")
+#         return r
+#     return inner_function
+#
+#
+# @execute_time
+# def message_print():
+#     time.sleep(5)
+#     # for i in range(1000000000):
+#     #     pass
+#     print("Hi !!!! Deos")
+#
+#
+#
+#
+# # message_print = execute_time(message_print)
+# message_print()
 
-#################################
-
-def execute_time(func):
+##############################################
+def password_required(func):
     def inner_function(*args, **kwargs):
-        start = time.time()
-        r = func(*args, **kwargs)
-        end = time.time() - start
-        print(f"The function execution time is {end-start}")
-        return r
+        n = int(input("Enter a password: "))
+        if n == 1234:
+            return func(*args, **kwargs)
+        else:
+            print("Your given password is not match.")
     return inner_function
 
 
-@execute_time
+
+@password_required
 def message_print():
-    time.sleep(5)
-    # for i in range(1000000000):
-    #     pass
-    print("Hi !!!! Deos")
+    print("Hello World.")
 
 
-# message_print = execute_time(message_print)
 message_print()
