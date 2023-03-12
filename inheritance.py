@@ -25,10 +25,10 @@ class Car(Vehicle):
 
 honda = Bike('black', '0', '2')
 
-mercize = Car('black', '4', '25')
+rolls = Car('black', '4', '25')
 
 print(honda.color)
 print(honda.doors)
-print(mercize.color)
-print(mercize.doors)
-print(mercize.mileage)
+print(rolls.color)
+print(rolls.doors)
+print(rolls.mileage)
