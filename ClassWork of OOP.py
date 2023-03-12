@@ -95,8 +95,3 @@ print(obj2.get_info())
 
 
 
-
-git add .
-git commit -m "assignments"
-git branch -M main
-git push -u origin main
